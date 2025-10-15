@@ -1,0 +1,286 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36" version="28.2.6">
+  <diagram name="Page-1" id="e7xvgnfhb0N5HJpu79zv">
+    <mxGraphModel dx="1901" dy="1499" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="1654" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="2zLzM-bWpu4UABIkoiyg-2" value="Functional" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="160" y="120" width="200" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="2zLzM-bWpu4UABIkoiyg-18" value="&lt;ul&gt;&lt;li&gt;1-1 send / receive msg (text)&lt;/li&gt;&lt;li&gt;Group message support&lt;/li&gt;&lt;li&gt;Last seen / online / offline&lt;/li&gt;&lt;li&gt;User login / authentication&lt;/li&gt;&lt;/ul&gt;" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" vertex="1" parent="2zLzM-bWpu4UABIkoiyg-2">
+          <mxGeometry x="-10" y="20" width="210" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="2zLzM-bWpu4UABIkoiyg-19" value="Non-Functional" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="400" y="120" width="200" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="2zLzM-bWpu4UABIkoiyg-21" value="&lt;ul&gt;&lt;li&gt;Scalable -&amp;gt; Huge traffic&lt;/li&gt;&lt;li&gt;Low latency&lt;/li&gt;&lt;li&gt;Highly available&lt;/li&gt;&lt;/ul&gt;" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" vertex="1" parent="2zLzM-bWpu4UABIkoiyg-19">
+          <mxGeometry y="20" width="230" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="2zLzM-bWpu4UABIkoiyg-23" value="Back of Envelope" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="160" y="280" width="440" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="2zLzM-bWpu4UABIkoiyg-25" value="&lt;ul&gt;&lt;li&gt;Total users -&amp;gt; 2 Billion (Daily Active User -&amp;gt; 50 Million)&lt;/li&gt;&lt;li&gt;1 user -&amp;gt; 10 msg -&amp;gt; 4 people in 1 day&lt;/li&gt;&lt;li&gt;Total msg per day = 40 * 50 million = 2 billion msg per day&lt;/li&gt;&lt;li&gt;1 msg 100 characters so: total data per day = 2 billion * 100 byte = 200gb per day&lt;/li&gt;&lt;li&gt;Memory for 10 years = 10*365*200gb&lt;/li&gt;&lt;/ul&gt;" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" vertex="1" parent="2zLzM-bWpu4UABIkoiyg-23">
+          <mxGeometry y="30" width="440" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="2zLzM-bWpu4UABIkoiyg-29" value="User A" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="880" y="160" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="2zLzM-bWpu4UABIkoiyg-30" value="User B" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="880" y="320" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="2zLzM-bWpu4UABIkoiyg-38" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1120" y="120" width="160" height="320" as="geometry" />
+        </mxCell>
+        <mxCell id="2zLzM-bWpu4UABIkoiyg-40" value="Chat Server 1" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1140" y="140" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="2zLzM-bWpu4UABIkoiyg-41" value="Chat Server 2" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1140" y="200" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="2zLzM-bWpu4UABIkoiyg-42" value="Chat Server 3" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1140" y="260" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="2zLzM-bWpu4UABIkoiyg-43" value="Chat Server 4" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1140" y="320" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="2zLzM-bWpu4UABIkoiyg-44" value="Chat Server 5" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1140" y="380" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="2zLzM-bWpu4UABIkoiyg-45" value="" style="endArrow=classic;startArrow=classic;html=1;rounded=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="2zLzM-bWpu4UABIkoiyg-29" target="2zLzM-bWpu4UABIkoiyg-38">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="660" y="530" as="sourcePoint" />
+            <mxPoint x="710" y="480" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2zLzM-bWpu4UABIkoiyg-48" value="WebSocket" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="2zLzM-bWpu4UABIkoiyg-45">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2zLzM-bWpu4UABIkoiyg-46" value="" style="endArrow=classic;startArrow=classic;html=1;rounded=0;entryX=0;entryY=0.75;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="2zLzM-bWpu4UABIkoiyg-30" target="2zLzM-bWpu4UABIkoiyg-38">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="850" y="620" as="sourcePoint" />
+            <mxPoint x="900" y="570" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2zLzM-bWpu4UABIkoiyg-47" value="WebSocket" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="2zLzM-bWpu4UABIkoiyg-46">
+          <mxGeometry x="-0.05" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2zLzM-bWpu4UABIkoiyg-49" value="User Mapping Service&lt;div&gt;(Zookeeper)&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="1120" y="-40" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="2zLzM-bWpu4UABIkoiyg-65" value="User Mapping Service Table" style="shape=table;startSize=30;container=1;collapsible=1;childLayout=tableLayout;fixedRows=1;rowLines=0;fontStyle=1;align=center;resizeLast=1;html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="1355" y="-230" width="180" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="2zLzM-bWpu4UABIkoiyg-69" value="" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;fillColor=none;collapsible=0;dropTarget=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=1;html=1;" vertex="1" parent="2zLzM-bWpu4UABIkoiyg-65">
+          <mxGeometry y="30" width="180" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="2zLzM-bWpu4UABIkoiyg-70" value="User 1" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;fontStyle=1;overflow=hidden;html=1;whiteSpace=wrap;" vertex="1" parent="2zLzM-bWpu4UABIkoiyg-69">
+          <mxGeometry width="60" height="30" as="geometry">
+            <mxRectangle width="60" height="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2zLzM-bWpu4UABIkoiyg-71" value="Chat server 1" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;fontStyle=5;overflow=hidden;html=1;whiteSpace=wrap;" vertex="1" parent="2zLzM-bWpu4UABIkoiyg-69">
+          <mxGeometry x="60" width="120" height="30" as="geometry">
+            <mxRectangle width="120" height="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2zLzM-bWpu4UABIkoiyg-75" value="" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;fillColor=none;collapsible=0;dropTarget=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=0;html=1;" vertex="1" parent="2zLzM-bWpu4UABIkoiyg-65">
+          <mxGeometry y="60" width="180" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="2zLzM-bWpu4UABIkoiyg-76" value="User 2" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;editable=1;overflow=hidden;html=1;whiteSpace=wrap;" vertex="1" parent="2zLzM-bWpu4UABIkoiyg-75">
+          <mxGeometry width="60" height="30" as="geometry">
+            <mxRectangle width="60" height="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2zLzM-bWpu4UABIkoiyg-77" value="&lt;u&gt;Chat server 4&lt;/u&gt;" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;html=1;whiteSpace=wrap;" vertex="1" parent="2zLzM-bWpu4UABIkoiyg-75">
+          <mxGeometry x="60" width="120" height="30" as="geometry">
+            <mxRectangle width="120" height="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2zLzM-bWpu4UABIkoiyg-78" value="First if the user 1 is offline so it first establishes the connection the zookeeper and let say zookeeper assigns the user 1 Chat Server 1&lt;br&gt;The table is updated as follows&lt;div&gt;eg Redis table can be used.&lt;/div&gt;" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1350" y="-290" width="190" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="2zLzM-bWpu4UABIkoiyg-79" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="2zLzM-bWpu4UABIkoiyg-29" target="2zLzM-bWpu4UABIkoiyg-49">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="920" y="150" as="sourcePoint" />
+            <mxPoint x="970" y="100" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="920" y="40" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2zLzM-bWpu4UABIkoiyg-81" value="Conn Established" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="2zLzM-bWpu4UABIkoiyg-79">
+          <mxGeometry x="-0.025" y="-2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2zLzM-bWpu4UABIkoiyg-82" value="Send Msg" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="980" y="160" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="2zLzM-bWpu4UABIkoiyg-83" value="" style="curved=1;endArrow=classic;html=1;rounded=0;exitX=0.25;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="2zLzM-bWpu4UABIkoiyg-82" target="2zLzM-bWpu4UABIkoiyg-84">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="730" y="100" as="sourcePoint" />
+            <mxPoint x="730" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="780" y="100" />
+              <mxPoint x="670" y="-20" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2zLzM-bWpu4UABIkoiyg-84" value="SendMsg(from: user 1, to: user 2, Msg, Type 1 : 1)" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="510" y="-220" width="290" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="2zLzM-bWpu4UABIkoiyg-85" value="DB" style="shape=datastore;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1380" y="180" width="60" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="2zLzM-bWpu4UABIkoiyg-86" value="" style="curved=1;endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.154;entryY=0.077;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="2zLzM-bWpu4UABIkoiyg-85" target="2zLzM-bWpu4UABIkoiyg-117">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1450" y="210" as="sourcePoint" />
+            <mxPoint x="1520" y="160" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1500" y="210" />
+              <mxPoint x="1450" y="160" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2zLzM-bWpu4UABIkoiyg-113" value="" style="swimlane;childLayout=stackLayout;resizeParent=1;resizeParentMax=0;startSize=0;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1520.0000000000005" y="140" width="240" height="130" as="geometry">
+            <mxRectangle x="1630.0000000000005" y="210" width="50" height="40" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2zLzM-bWpu4UABIkoiyg-114" value="Read" style="swimlane;startSize=20;html=1;" vertex="1" parent="2zLzM-bWpu4UABIkoiyg-113">
+          <mxGeometry width="120" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="2zLzM-bWpu4UABIkoiyg-117" value="&lt;ul&gt;&lt;li&gt;User1 -&amp;gt; User2&lt;/li&gt;&lt;li&gt;Group Chat History&lt;/li&gt;&lt;li&gt;Group Member Detail&lt;/li&gt;&lt;li&gt;User Profile&lt;/li&gt;&lt;/ul&gt;" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" vertex="1" parent="2zLzM-bWpu4UABIkoiyg-114">
+          <mxGeometry x="-20.000000000000455" y="10" width="130" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="2zLzM-bWpu4UABIkoiyg-115" value="Write" style="swimlane;startSize=20;html=1;" vertex="1" parent="2zLzM-bWpu4UABIkoiyg-113">
+          <mxGeometry x="120" width="120" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="2zLzM-bWpu4UABIkoiyg-118" value="&lt;ul&gt;&lt;li&gt;Send Msg&lt;/li&gt;&lt;li&gt;Update Profile&lt;/li&gt;&lt;/ul&gt;" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" vertex="1" parent="2zLzM-bWpu4UABIkoiyg-115">
+          <mxGeometry x="-10.000000000000455" y="30" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="2zLzM-bWpu4UABIkoiyg-119" value="No complex query for above requirements. Billions of chat so need of low latency search capability. High availability.&amp;nbsp;&lt;br&gt;After all the considerations we can use NoSQL.&lt;div&gt;We can use Cassandra DB which used columnar storage.&lt;/div&gt;" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1520" y="290" width="260" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="2zLzM-bWpu4UABIkoiyg-120" value="" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1.007;exitY=0.283;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="2zLzM-bWpu4UABIkoiyg-38" target="2zLzM-bWpu4UABIkoiyg-85">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1240" y="560" as="sourcePoint" />
+            <mxPoint x="1290" y="510" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2zLzM-bWpu4UABIkoiyg-126" value="" style="endArrow=classic;html=1;rounded=0;exitX=0;exitY=0;exitDx=0;exitDy=0;entryX=0.506;entryY=0.986;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="2zLzM-bWpu4UABIkoiyg-29" target="2zLzM-bWpu4UABIkoiyg-130">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="720" y="220" as="sourcePoint" />
+            <mxPoint x="870" y="20" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2zLzM-bWpu4UABIkoiyg-127" value="HTTP" style="edgeLabel;resizable=0;html=1;;align=center;verticalAlign=middle;" connectable="0" vertex="1" parent="2zLzM-bWpu4UABIkoiyg-126">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="2zLzM-bWpu4UABIkoiyg-128" value="" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0;entryDx=0;entryDy=0;exitX=0.993;exitY=0.505;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="2zLzM-bWpu4UABIkoiyg-130" target="2zLzM-bWpu4UABIkoiyg-49">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="940" y="-40" as="sourcePoint" />
+            <mxPoint x="910" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2zLzM-bWpu4UABIkoiyg-129" value="" style="curved=1;endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0.502;entryY=1.012;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="2zLzM-bWpu4UABIkoiyg-49" target="2zLzM-bWpu4UABIkoiyg-75">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1380" y="20" as="sourcePoint" />
+            <mxPoint x="1430" y="-30" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1430" y="20" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2zLzM-bWpu4UABIkoiyg-130" value="Load balancer" style="html=1;whiteSpace=wrap;aspect=fixed;shape=isoRectangle;" vertex="1" parent="1">
+          <mxGeometry x="820" y="-75" width="116.67" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="2zLzM-bWpu4UABIkoiyg-131" value="" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" target="2zLzM-bWpu4UABIkoiyg-132">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1040" y="-40" as="sourcePoint" />
+            <mxPoint x="1040" y="-130" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1040" y="-130" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2zLzM-bWpu4UABIkoiyg-132" value="User Login&amp;nbsp;&lt;div&gt;Service&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1140" y="-160" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="2zLzM-bWpu4UABIkoiyg-134" value="DB" style="shape=datastore;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1170" y="-270" width="60" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="2zLzM-bWpu4UABIkoiyg-135" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="2zLzM-bWpu4UABIkoiyg-132" target="2zLzM-bWpu4UABIkoiyg-134">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="980" y="-210" as="sourcePoint" />
+            <mxPoint x="1030" y="-260" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2zLzM-bWpu4UABIkoiyg-136" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" target="2zLzM-bWpu4UABIkoiyg-139">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1040" y="-130" as="sourcePoint" />
+            <mxPoint x="1040" y="-200" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2zLzM-bWpu4UABIkoiyg-137" value="" style="endArrow=classic;startArrow=classic;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="2zLzM-bWpu4UABIkoiyg-38" target="2zLzM-bWpu4UABIkoiyg-49">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1410" y="120" as="sourcePoint" />
+            <mxPoint x="1460" y="70" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2zLzM-bWpu4UABIkoiyg-138" value="" style="endArrow=classic;startArrow=classic;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="2zLzM-bWpu4UABIkoiyg-49" target="2zLzM-bWpu4UABIkoiyg-132">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1460" y="70" as="sourcePoint" />
+            <mxPoint x="1510" y="20" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2zLzM-bWpu4UABIkoiyg-139" value="Group Service&lt;div&gt;(Deletion / creation&amp;nbsp;&lt;/div&gt;&lt;div&gt;/ updation)&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="980" y="-260" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="2zLzM-bWpu4UABIkoiyg-140" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="2zLzM-bWpu4UABIkoiyg-139" target="2zLzM-bWpu4UABIkoiyg-141">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1020" y="-310" as="sourcePoint" />
+            <mxPoint x="1040" y="-320" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2zLzM-bWpu4UABIkoiyg-141" value="DB" style="shape=datastore;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1010" y="-380" width="60" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="2zLzM-bWpu4UABIkoiyg-142" value="Last seen / online / offline functionality can be achieved through heartbeat mechanism. Lets say there is one more system (presence system) which listen to the heartbeat of the user. As soon as the heartbeat is not listened from the user the system marks the user offline and updates the zookeeper." style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="840" y="580" width="1020" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="2zLzM-bWpu4UABIkoiyg-143" value="Presence System" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="680" y="156" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="2zLzM-bWpu4UABIkoiyg-144" value="" style="endArrow=classic;startArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.75;exitDx=0;exitDy=0;" edge="1" parent="1" source="2zLzM-bWpu4UABIkoiyg-143" target="2zLzM-bWpu4UABIkoiyg-29">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="680" y="330" as="sourcePoint" />
+            <mxPoint x="730" y="280" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2zLzM-bWpu4UABIkoiyg-145" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="2zLzM-bWpu4UABIkoiyg-143" target="2zLzM-bWpu4UABIkoiyg-146">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="720" y="310" as="sourcePoint" />
+            <mxPoint x="740" y="270" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2zLzM-bWpu4UABIkoiyg-146" value="Redis" style="shape=datastore;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="710" y="240" width="60" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="2zLzM-bWpu4UABIkoiyg-147" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.75;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="2zLzM-bWpu4UABIkoiyg-49" target="2zLzM-bWpu4UABIkoiyg-148">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1300" y="70" as="sourcePoint" />
+            <mxPoint x="1350" y="20" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2zLzM-bWpu4UABIkoiyg-148" value="Redis" style="shape=datastore;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1355" y="-10" width="60" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
