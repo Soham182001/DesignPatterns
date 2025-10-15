@@ -1,0 +1,188 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36" version="28.2.7">
+  <diagram name="Page-1" id="JmZcPF6YAIJbTZG2oEpb">
+    <mxGraphModel dx="1426" dy="824" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="Q4UiBrQ8ZTTR2DUmaou1-1" value="Client" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="440" y="230" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Q4UiBrQ8ZTTR2DUmaou1-3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Q4UiBrQ8ZTTR2DUmaou1-2" target="Q4UiBrQ8ZTTR2DUmaou1-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Q4UiBrQ8ZTTR2DUmaou1-2" value="User makes POST (add item to cart)" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="485" y="120" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Q4UiBrQ8ZTTR2DUmaou1-4" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="Q4UiBrQ8ZTTR2DUmaou1-1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="650" y="280" as="sourcePoint" />
+            <mxPoint x="720" y="260" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Q4UiBrQ8ZTTR2DUmaou1-6" value="1" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="Q4UiBrQ8ZTTR2DUmaou1-4">
+          <mxGeometry x="-0.0375" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Q4UiBrQ8ZTTR2DUmaou1-5" value="Generate Idempotency Key" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="720" y="230" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Q4UiBrQ8ZTTR2DUmaou1-7" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="Q4UiBrQ8ZTTR2DUmaou1-1" target="Q4UiBrQ8ZTTR2DUmaou1-8">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="440" y="480" as="sourcePoint" />
+            <mxPoint x="500" y="410" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Q4UiBrQ8ZTTR2DUmaou1-14" value="2" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="Q4UiBrQ8ZTTR2DUmaou1-7">
+          <mxGeometry x="0.1942" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Q4UiBrQ8ZTTR2DUmaou1-8" value="Server&lt;div&gt;POST / add item&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="440" y="429" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Q4UiBrQ8ZTTR2DUmaou1-9" value="Attach the idempotency key in the header of the POST req and call server" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="360" y="330" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Q4UiBrQ8ZTTR2DUmaou1-10" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="Q4UiBrQ8ZTTR2DUmaou1-8" target="Q4UiBrQ8ZTTR2DUmaou1-11">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="630" y="450" as="sourcePoint" />
+            <mxPoint x="710" y="460" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Q4UiBrQ8ZTTR2DUmaou1-15" value="3" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="Q4UiBrQ8ZTTR2DUmaou1-10">
+          <mxGeometry x="-0.1125" y="-2" relative="1" as="geometry">
+            <mxPoint y="-3" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Q4UiBrQ8ZTTR2DUmaou1-11" value="Validation&lt;div&gt;if IK is&amp;nbsp;&lt;/div&gt;&lt;div&gt;present&lt;/div&gt;" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="720" y="409.5" width="110" height="99" as="geometry" />
+        </mxCell>
+        <mxCell id="Q4UiBrQ8ZTTR2DUmaou1-12" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="Q4UiBrQ8ZTTR2DUmaou1-11" target="Q4UiBrQ8ZTTR2DUmaou1-16">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1010" y="520" as="sourcePoint" />
+            <mxPoint x="980" y="460" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Q4UiBrQ8ZTTR2DUmaou1-13" value="No IK" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="Q4UiBrQ8ZTTR2DUmaou1-12">
+          <mxGeometry x="-0.1466" y="-1" relative="1" as="geometry">
+            <mxPoint y="-1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Q4UiBrQ8ZTTR2DUmaou1-16" value="HTTP 400 {Validation Error}" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="980" y="444" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Q4UiBrQ8ZTTR2DUmaou1-17" value="IK = Idempotency Key" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="120" y="220" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Q4UiBrQ8ZTTR2DUmaou1-18" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="Q4UiBrQ8ZTTR2DUmaou1-11">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="830" y="640" as="sourcePoint" />
+            <mxPoint x="775" y="620" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Q4UiBrQ8ZTTR2DUmaou1-19" value="4" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="Q4UiBrQ8ZTTR2DUmaou1-18">
+          <mxGeometry x="-0.064" y="1" relative="1" as="geometry">
+            <mxPoint x="-2" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Q4UiBrQ8ZTTR2DUmaou1-22" value="Check in DB" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="720" y="620" width="110" height="99" as="geometry" />
+        </mxCell>
+        <mxCell id="Q4UiBrQ8ZTTR2DUmaou1-23" value="Server will read IK from DB" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="780" y="540" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Q4UiBrQ8ZTTR2DUmaou1-25" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="Q4UiBrQ8ZTTR2DUmaou1-22" target="Q4UiBrQ8ZTTR2DUmaou1-28">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="870" y="710" as="sourcePoint" />
+            <mxPoint x="980" y="670" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Q4UiBrQ8ZTTR2DUmaou1-26" value="IK not in DB" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="Q4UiBrQ8ZTTR2DUmaou1-25">
+          <mxGeometry x="-0.4667" relative="1" as="geometry">
+            <mxPoint x="32" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Q4UiBrQ8ZTTR2DUmaou1-30" value="5" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="Q4UiBrQ8ZTTR2DUmaou1-25">
+          <mxGeometry x="-0.6625" y="1" relative="1" as="geometry">
+            <mxPoint y="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Q4UiBrQ8ZTTR2DUmaou1-28" value="DB stores&lt;div&gt;IK&lt;/div&gt;" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
+          <mxGeometry x="990" y="629.5" width="60" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Q4UiBrQ8ZTTR2DUmaou1-31" value="Server stores the IK in DB as Created" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="850" y="689" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Q4UiBrQ8ZTTR2DUmaou1-33" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="Q4UiBrQ8ZTTR2DUmaou1-28" target="Q4UiBrQ8ZTTR2DUmaou1-35">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="700" y="550" as="sourcePoint" />
+            <mxPoint x="1020" y="800" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Q4UiBrQ8ZTTR2DUmaou1-35" value="POST req executed.&lt;div&gt;Item added to cart.&lt;/div&gt;&lt;div&gt;Change the status of IK in DB to &quot;Claimed&quot;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="950" y="800" width="140" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Q4UiBrQ8ZTTR2DUmaou1-36" value="" style="endArrow=classic;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="Q4UiBrQ8ZTTR2DUmaou1-22" target="Q4UiBrQ8ZTTR2DUmaou1-43">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="550" y="750" as="sourcePoint" />
+            <mxPoint x="590" y="670" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Q4UiBrQ8ZTTR2DUmaou1-37" value="5" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="Q4UiBrQ8ZTTR2DUmaou1-36">
+          <mxGeometry x="0.277" y="1" relative="1" as="geometry">
+            <mxPoint y="-2" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Q4UiBrQ8ZTTR2DUmaou1-38" value="IK in DB" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="Q4UiBrQ8ZTTR2DUmaou1-36">
+          <mxGeometry x="-0.2923" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Q4UiBrQ8ZTTR2DUmaou1-39" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="Q4UiBrQ8ZTTR2DUmaou1-35" target="Q4UiBrQ8ZTTR2DUmaou1-40">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1140" y="1010" as="sourcePoint" />
+            <mxPoint x="1020" y="950" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Q4UiBrQ8ZTTR2DUmaou1-40" value="HTTP 201 resource created" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="970" y="960" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Q4UiBrQ8ZTTR2DUmaou1-43" value="Check in DB&lt;div&gt;Claimed /&amp;nbsp;&lt;/div&gt;&lt;div&gt;Created&lt;/div&gt;" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="470" y="620" width="110" height="99" as="geometry" />
+        </mxCell>
+        <mxCell id="Q4UiBrQ8ZTTR2DUmaou1-44" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="Q4UiBrQ8ZTTR2DUmaou1-43" target="Q4UiBrQ8ZTTR2DUmaou1-48">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="700" y="810" as="sourcePoint" />
+            <mxPoint x="525" y="800" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Q4UiBrQ8ZTTR2DUmaou1-45" value="Consumed" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="Q4UiBrQ8ZTTR2DUmaou1-44">
+          <mxGeometry x="-0.1358" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Q4UiBrQ8ZTTR2DUmaou1-46" value="" style="endArrow=classic;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="Q4UiBrQ8ZTTR2DUmaou1-43" target="Q4UiBrQ8ZTTR2DUmaou1-49">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="300" y="790" as="sourcePoint" />
+            <mxPoint x="360" y="670" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Q4UiBrQ8ZTTR2DUmaou1-47" value="Created" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="Q4UiBrQ8ZTTR2DUmaou1-46">
+          <mxGeometry x="0.0364" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Q4UiBrQ8ZTTR2DUmaou1-48" value="HTTP 200 prev req already completed" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="472.5" y="810" width="105" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Q4UiBrQ8ZTTR2DUmaou1-49" value="HTTP 409 means conflict created retry later" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="220" y="654.5" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Q4UiBrQ8ZTTR2DUmaou1-51" value="There are two scenarios where we need to handle Idempotency. First when two same requests are send one after another (Sequential) another is two same requests are made at same time (parallel). In case of Sequential requests it can be handled normally. In case of parallel requests we need to apply mutex or semaphore at step 4. So that single request can be processed at the step 4.&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;In case of distributed system lets say two requests goes to two different server we need to use cache to process the requests instead of DB.&lt;/div&gt;" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="940" y="140" width="360" height="190" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
